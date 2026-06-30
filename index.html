@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EASYID — Global Identity Infrastructure Provider</title>
+    <meta
+      name="description"
+      content="EASYID: one-stop overseas identity infrastructure — communication, address, network, and account support."
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="lang-zh">
+    <a class="skip-link" href="#main" data-i18n="skip">跳到正文</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="header-left">
+          <div class="lang-toggle" role="group" aria-label="Language">
+            <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+            <span class="lang-sep">|</span>
+            <button type="button" class="lang-btn active" data-lang="zh" aria-pressed="true">中文</button>
+          </div>
+          <a class="logo" href="#">EASYID</a>
+        </div>
+        <nav class="nav-main" aria-label="Primary">
+          <a href="#giffgaff" data-i18n="nav.giffgaff">giffgaff 卡</a>
+          <a href="#solution-modules" data-i18n="nav.solution">方案</a>
+          <a href="#pricing" data-i18n="nav.pricing">套餐</a>
+          <a href="#scenarios" data-i18n="nav.scenarios">场景</a>
+          <a href="#orders" data-i18n="nav.orders">个人订单</a>
+          <a href="#agent" data-i18n="nav.agent">成为代理</a>
+          <a href="#contact" data-i18n="nav.contact">联系我们</a>
+        </nav>
+        <div class="header-right">
+          <a class="nav-cta" href="#giffgaff" data-i18n="nav.cta">立即开始</a>
+        </div>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div id="mobile-nav" class="mobile-nav" hidden>
+        <a href="#giffgaff" data-i18n="nav.giffgaff">giffgaff 卡</a>
+        <a href="#solution-modules" data-i18n="nav.solution">方案</a>
+        <a href="#pricing" data-i18n="nav.pricing">套餐</a>
+        <a href="#scenarios" data-i18n="nav.scenarios">场景</a>
+        <a href="#orders" data-i18n="nav.orders">个人订单</a>
+        <a href="#agent" data-i18n="nav.agent">成为代理</a>
+        <a href="#contact" data-i18n="nav.contact">联系我们</a>
+        <a href="#giffgaff" class="mobile-cta" data-i18n="nav.cta">立即开始</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-orbit">
+            <span class="hero-badge">ID</span>
+            <span class="hero-ring"></span>
+          </div>
+        </div>
+        <div class="hero-content">
+          <p class="slogan" data-i18n="slogan">全球身份基础设施服务商</p>
+          <p class="hero-tagline" data-i18n="hero.tagline">一站式海外身份解决方案</p>
+          <h1 class="hero-title" data-i18n="hero.title">轻松获得海外身份基础设施解决方案</h1>
+          <ul class="hero-bullets">
+            <li data-i18n="hero.b1">无需出国</li>
+            <li data-i18n="hero.b2">无需复杂流程</li>
+            <li data-i18n="hero.b3">一键获取可用的海外身份环境</li>
+          </ul>
+          <a class="btn btn-primary" href="#giffgaff" data-i18n="nav.cta">立即开始</a>
+        </div>
+      </section>
+
+      <section class="section section-pain" id="pain">
+        <div class="container">
+          <h2 class="section-title" data-i18n="pain.title">这些痛点，你遇到过吗？</h2>
+          <ul class="pain-grid">
+            <li class="pain-card">
+              <span class="pain-icon" aria-hidden="true">!</span>
+              <p data-i18n="pain.p1">注册海外平台步骤多、门槛高</p>
+            </li>
+            <li class="pain-card">
+              <span class="pain-icon" aria-hidden="true">📵</span>
+              <p data-i18n="pain.p2">没有稳定可用的境外手机号</p>
+            </li>
+            <li class="pain-card">
+              <span class="pain-icon" aria-hidden="true">🪪</span>
+              <p data-i18n="pain.p3">KYC 或地址验证反复卡住</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section-solution" id="home-offer">
+        <div class="container">
+          <h2 class="section-title" data-i18n="solution.title">我们提供</h2>
+          <p class="section-lead" data-i18n="solution.lead">一体化栈，而不是零散资源的堆砌</p>
+          <ul class="solution-pills">
+            <li data-i18n="solution.s1">通信</li>
+            <li data-i18n="solution.s2">地址</li>
+            <li data-i18n="solution.s3">网络</li>
+            <li data-i18n="solution.s4">一站式支持</li>
+          </ul>
+          <p class="solution-highlight" data-i18n="solution.sell">
+            我们卖的是成功率——一套完整、可落地的海外身份环境。
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-modules">
+        <div class="container">
+          <div id="giffgaff" class="module-giffgaff-block">
+            <article class="module-card">
+              <div class="module-text">
+                <h2 class="module-heading" data-i18n="modules.gg.tag">1 · giffgaff 英国手机卡</h2>
+                <h3 class="module-subtitle" data-i18n="modules.gg.title">最稳定的海外实体卡，畅享全球通信</h3>
+                <p class="module-desc" data-i18n="modules.gg.desc">
+                  giffgaff 卡为 0 月租；一次性付费后无固定月费等后续费用。发送短信价格为 0.1 欧元/条。建议每半年发送一条任意短信以保号。
+                </p>
+              </div>
+              <div class="module-icon" aria-hidden="true">📱</div>
+              <span class="module-chevron" aria-hidden="true">›</span>
+            </article>
+
+            <h3 class="gg-plans-title" data-i18n="giffgaff.plansTitle">一次性购卡（USDC）</h3>
+            <p class="section-sub gg-plans-sub" data-i18n="giffgaff.sub">
+              所有 giffgaff 均为 0 月租，一次性购卡无需后续付费。下列 USDC 为 EASYID 一次性购卡费用。人民币价格按 1 USDC ≈ ¥6.88 估算，仅供参考。实体 SIM 另加收本标价 10% 运费。
+            </p>
+
+            <div class="gg-stack">
+              <article class="gg-card gg-card--promo">
+                <div class="gg-card-main">
+                  <div class="gg-card-row">
+                    <div class="gg-data">
+                      <p class="gg-data-label" data-i18n="giffgaff.data">流量</p>
+                      <p class="gg-data-amount" data-i18n="gg.p1.gb">75 GB</p>
+                      <p class="gg-data-old"><del data-i18n="gg.p1.gbOld">25 GB</del></p>
+                    </div>
+                    <div class="gg-price">
+                      <p class="gg-price-usdc"><span data-i18n="gg.p1.usdc">16.51</span> <span data-i18n="giffgaff.usdc">USDC</span></p>
+                      <p class="gg-price-per" data-i18n="giffgaff.once">一次性购卡</p>
+                      <p class="gg-price-cny" data-i18n="gg.p1.cny">约合 ¥114</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="gg-boost" role="note">
+                  <span class="gg-boost-logo" aria-hidden="true">⚡</span>
+                  <span class="gg-boost-brand" data-i18n="giffgaff.boost">Data Boost</span>
+                  <span class="gg-boost-text" data-i18n="gg.p1.promo">额外赠送 50GB</span>
+                </div>
+                <div class="gg-card-actions">
+                  <button type="button" class="btn btn-primary gg-order-btn" data-plan="p1" data-usdc="16.51" data-i18n="gg.order">立即下单</button>
+                </div>
+              </article>
+
+              <article class="gg-card gg-card--promo">
+                <div class="gg-card-main">
+                  <div class="gg-card-row">
+                    <div class="gg-data">
+                      <p class="gg-data-label" data-i18n="giffgaff.data">流量</p>
+                      <p class="gg-data-amount" data-i18n="gg.p2.gb">150 GB</p>
+                      <p class="gg-data-old"><del data-i18n="gg.p2.gbOld">50 GB</del></p>
+                    </div>
+                    <div class="gg-price">
+                      <p class="gg-price-usdc"><span data-i18n="gg.p2.usdc">19.81</span> <span data-i18n="giffgaff.usdc">USDC</span></p>
+                      <p class="gg-price-per" data-i18n="giffgaff.once">一次性购卡</p>
+                      <p class="gg-price-cny" data-i18n="gg.p2.cny">约合 ¥136</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="gg-boost" role="note">
+                  <span class="gg-boost-logo" aria-hidden="true">⚡</span>
+                  <span class="gg-boost-brand" data-i18n="giffgaff.boost">Data Boost</span>
+                  <span class="gg-boost-text" data-i18n="gg.p2.promo">额外赠送 100GB</span>
+                </div>
+                <div class="gg-card-actions">
+                  <button type="button" class="btn btn-primary gg-order-btn" data-plan="p2" data-usdc="19.81" data-i18n="gg.order">立即下单</button>
+                </div>
+              </article>
+
+              <article class="gg-card gg-card--promo">
+                <div class="gg-card-main">
+                  <div class="gg-card-row">
+                    <div class="gg-data">
+                      <p class="gg-data-label" data-i18n="giffgaff.data">流量</p>
+                      <p class="gg-data-amount" data-i18n="gg.p3.gb">300 GB</p>
+                      <p class="gg-data-old"><del data-i18n="gg.p3.gbOld">100 GB</del></p>
+                    </div>
+                    <div class="gg-price">
+                      <p class="gg-price-usdc"><span data-i18n="gg.p3.usdc">24.77</span> <span data-i18n="giffgaff.usdc">USDC</span></p>
+                      <p class="gg-price-per" data-i18n="giffgaff.once">一次性购卡</p>
+                      <p class="gg-price-cny" data-i18n="gg.p3.cny">约合 ¥170</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="gg-boost" role="note">
+                  <span class="gg-boost-logo" aria-hidden="true">⚡</span>
+                  <span class="gg-boost-brand" data-i18n="giffgaff.boost">Data Boost</span>
+                  <span class="gg-boost-text" data-i18n="gg.p3.promo">额外赠送 200GB</span>
+                </div>
+                <div class="gg-card-actions">
+                  <button type="button" class="btn btn-primary gg-order-btn" data-plan="p3" data-usdc="24.77" data-i18n="gg.order">立即下单</button>
+                </div>
+              </article>
+
+              <article class="gg-card">
+                <div class="gg-card-main">
+                  <div class="gg-card-row">
+                    <div class="gg-data">
+                      <p class="gg-data-label" data-i18n="giffgaff.data">流量</p>
+                      <p class="gg-data-amount" data-i18n="gg.p4.gb">500 GB</p>
+                    </div>
+                    <div class="gg-price">
+                      <p class="gg-price-usdc"><span data-i18n="gg.p4.usdc">33.02</span> <span data-i18n="giffgaff.usdc">USDC</span></p>
+                      <p class="gg-price-per" data-i18n="giffgaff.once">一次性购卡</p>
+                      <p class="gg-price-cny" data-i18n="gg.p4.cny">约合 ¥227</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="gg-boost" role="note">
+                  <span class="gg-boost-logo" aria-hidden="true">💬</span>
+                  <span class="gg-boost-brand" data-i18n="gg.p4.smsBadge">短信</span>
+                  <span class="gg-boost-text" data-i18n="gg.p4.sms">年度 500 条免费短信</span>
+                </div>
+                <div class="gg-card-actions">
+                  <button type="button" class="btn btn-primary gg-order-btn" data-plan="p4" data-usdc="33.02" data-i18n="gg.order">立即下单</button>
+                </div>
+              </article>
+
+              <article class="gg-card">
+                <div class="gg-card-main">
+                  <div class="gg-card-row">
+                    <div class="gg-data">
+                      <p class="gg-data-label" data-i18n="giffgaff.data">流量</p>
+                      <p class="gg-data-amount" data-i18n="gg.p5.gb">无限流量</p>
+                    </div>
+                    <div class="gg-price">
+                      <p class="gg-price-usdc"><span data-i18n="gg.p5.usdc">46.66</span> <span data-i18n="giffgaff.usdc">USDC</span></p>
+                      <p class="gg-price-per" data-i18n="giffgaff.once">一次性购卡</p>
+                      <p class="gg-price-cny" data-i18n="gg.p5.cny">约合 ¥321</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="gg-boost" role="note">
+                  <span class="gg-boost-logo" aria-hidden="true">💬</span>
+                  <span class="gg-boost-brand" data-i18n="gg.p5.smsBadge">短信</span>
+                  <span class="gg-boost-text" data-i18n="gg.p5.sms">年度 2000 条免费短信</span>
+                </div>
+                <div class="gg-card-actions">
+                  <button type="button" class="btn btn-primary gg-order-btn" data-plan="p5" data-usdc="46.66" data-i18n="gg.order">立即下单</button>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <article class="module-card" id="solution-modules">
+            <div class="module-text">
+              <h2 class="module-heading" data-i18n="modules.m1.tag">2 · 通信模块</h2>
+              <h3 class="module-subtitle" data-i18n="modules.m1.title">平台认可的可达性</h3>
+              <p class="module-desc" data-i18n="modules.m1.desc">
+                eSIM 与收码 API 支持自动化；英国实体号路径请使用上方 giffgaff 模块下单——号码稳定、归属清晰。
+              </p>
+              <ul class="module-list">
+                <li data-i18n="modules.m1.l1">eSIM</li>
+                <li data-i18n="modules.m1.l2">收码 API</li>
+                <li data-i18n="modules.m1.l3">英国 giffgaff（见模块 1）</li>
+              </ul>
+            </div>
+            <div class="module-icon" aria-hidden="true">📶</div>
+            <span class="module-chevron" aria-hidden="true">›</span>
+          </article>
+
+          <article class="module-card">
+            <div class="module-text">
+              <h2 class="module-heading" data-i18n="modules.m2.tag">3 · 地址模块</h2>
+              <h3 class="module-subtitle" data-i18n="modules.m2.title">在关键场景可用的地址证明</h3>
+              <p class="module-desc" data-i18n="modules.m2.desc">
+                覆盖港澳台、欧美日韩等地区的收信/注册地址；可选转运地址，集中处理银行与平台信函，降低漏件风险。
+              </p>
+              <ul class="module-list">
+                <li data-i18n="modules.m2.l1">海外地址（收信 / 注册）</li>
+                <li data-i18n="modules.m2.l2">转运地址</li>
+              </ul>
+            </div>
+            <div class="module-icon" aria-hidden="true">✉️</div>
+            <span class="module-chevron" aria-hidden="true">›</span>
+          </article>
+
+          <article class="module-card">
+            <div class="module-text">
+              <h2 class="module-heading" data-i18n="modules.m3.tag">4 · 网络模块</h2>
+              <h3 class="module-subtitle" data-i18n="modules.m3.title">贴近真实用户的环境</h3>
+              <p class="module-desc" data-i18n="modules.m3.desc">
+                与目标地区匹配的住宅 IP，配合独立指纹浏览器环境，减少机房流量与同指纹带来的风控误杀。
+              </p>
+              <ul class="module-list">
+                <li data-i18n="modules.m3.l1">住宅 IP</li>
+                <li data-i18n="modules.m3.l2">指纹浏览器环境</li>
+              </ul>
+            </div>
+            <div class="module-icon" aria-hidden="true">🌐</div>
+            <span class="module-chevron" aria-hidden="true">›</span>
+          </article>
+
+          <article class="module-card">
+            <div class="module-text">
+              <h2 class="module-heading" data-i18n="modules.m4.tag">5 · 账户辅助模块</h2>
+              <h3 class="module-subtitle" data-i18n="modules.m4.title">在合规前提下的陪跑</h3>
+              <p class="module-desc" data-i18n="modules.m4.desc">
+                注册流程拆解与材料清单；KYC 字段说明与格式建议。我们只做合规指导，不提供造假或绕过审核的服务。
+              </p>
+              <ul class="module-list">
+                <li data-i18n="modules.m4.l1">注册指导</li>
+                <li data-i18n="modules.m4.l2">KYC 辅助（合规优先）</li>
+              </ul>
+            </div>
+            <div class="module-icon" aria-hidden="true">🛡️</div>
+            <span class="module-chevron" aria-hidden="true">›</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-pricing" id="pricing">
+        <div class="container">
+          <h2 class="section-title centered" data-i18n="pricing.title">组合式身份解决方案</h2>
+          <div class="pricing-grid">
+            <article class="price-card price-card--tier-white">
+              <div class="price-badge bronze" data-i18n="pricing.p1.badge">验讯先行版</div>
+              <p class="price-amount">$59</p>
+              <ul class="price-features">
+                <li data-i18n="pricing.p1.f1">
+                  giffgaff 实体号 + 每月 75G 固定流量 + 收码通信 + 港澳台海外地址
+                </li>
+                <li data-i18n="pricing.p1.f2">8 小时客服支持</li>
+                <li data-i18n="pricing.p1.f3">低成本试错：先验证业务跑通，再决定是否加码</li>
+                <li data-i18n="pricing.p1.f4">客服响应：开通指引 + 常见问题排查清单</li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-primary price-bundle-btn"
+                data-plan-id="bundle-starter"
+                data-usdc="59"
+                data-i18n="pricing.order"
+              >
+                立即下单
+              </button>
+            </article>
+            <article class="price-card price-card--tier-yellow">
+              <div class="price-badge silver" data-i18n="pricing.p2.badge">双证开号版</div>
+              <p class="price-amount">$99</p>
+              <ul class="price-features">
+                <li data-i18n="pricing.p2.f1">
+                  giffgaff 实体号 + 每月 150G 固定流量 + 自选手机号码 + 海外地址 + 24 小时客服支持 + 收码通信 + 注册全流程拆解（字段怎么填、材料怎么备）
+                </li>
+                <li data-i18n="pricing.p2.f2">显著降低 KYC / 地址核验被打回的概率（合规前提下对齐口径）</li>
+                <li data-i18n="pricing.p2.f3">适合 Wise、银行信函、交易所进阶认证等「双证」场景</li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-primary price-bundle-btn"
+                data-plan-id="bundle-dual"
+                data-usdc="99"
+                data-i18n="pricing.order"
+              >
+                立即下单
+              </button>
+            </article>
+            <article class="price-card price-card--tier-pink featured">
+              <span class="price-ribbon" data-i18n="pricing.ribbon">最多人选</span>
+              <div class="price-badge gold" data-i18n="pricing.p3.badge">全环境旗舰版</div>
+              <p class="price-amount">$199+</p>
+              <ul class="price-features">
+                <li data-i18n="pricing.p3.f1">
+                  giffgaff 实体号 + 每月无限流量 + 8888 豹子精品靓号 + 海外地址（自选地区）+ 收码通信 + 网络指纹 + IP 环境搭建 + 24 小时技术协助支持
+                </li>
+                <li data-i18n="pricing.p3.f2">手机 + 地址 + 住宅级 IP / 干净网络出口，风控视角更顺眼</li>
+                <li data-i18n="pricing.p3.f3">指纹浏览器环境隔离方案，避免同设备多账号连坐</li>
+                <li data-i18n="pricing.p3.f4">从注册到环境验收：关键风险点前置排查，少踩「莫名其妙封号」</li>
+                <li data-i18n="pricing.p3.f5">1v1 技术跟单：优先响应、可复盘、可迭代你的 SOP</li>
+                <li data-i18n="pricing.p3.f6">面向高价值账号与追求长期稳定客户，省心一把梭</li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-primary price-bundle-btn"
+                data-plan-id="bundle-full"
+                data-usdc="199"
+                data-i18n="pricing.order"
+              >
+                立即下单
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-scenarios" id="scenarios">
+        <div class="container">
+          <h2 class="section-title centered" data-i18n="scenarios.title">使用场景</h2>
+          <div class="scenario-grid">
+            <div class="scenario-card">
+              <h3 data-i18n="scenarios.c1.t">注册交易所</h3>
+              <p data-i18n="scenarios.c1.p">手机、地址证明与干净 IP，让开户资料一次对齐平台要求。</p>
+            </div>
+            <div class="scenario-card">
+              <h3 data-i18n="scenarios.c2.t">海外支付</h3>
+              <p data-i18n="scenarios.c2.p">Wise、PayPal、Stripe 及本地钱包所需的稳定身份信号。</p>
+            </div>
+            <div class="scenario-card">
+              <h3 data-i18n="scenarios.c3.t">空投撸毛</h3>
+              <p data-i18n="scenarios.c3.p">可复用的地区正确环境，降低批量注册带来的封号率。</p>
+            </div>
+            <div class="scenario-card">
+              <h3 data-i18n="scenarios.c4.t">SaaS 工具</h3>
+              <p data-i18n="scenarios.c4.p">注册仅限美欧等地的 SaaS 与 API，在合规材料流中完成开通。</p>
+            </div>
+            <div class="scenario-card">
+              <h3 data-i18n="scenarios.c5.t">接码通信</h3>
+              <p data-i18n="scenarios.c5.p">
+                稳定海外 eSIM 与实体手机卡，收码与日常通信更可靠；覆盖更多海外通信路径，按需组合方案。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-orders" id="orders">
+        <div class="container">
+          <h2 class="section-title centered" data-i18n="orders.title">个人订单</h2>
+          <p id="orders-empty" class="orders-empty" data-i18n="orders.empty">暂无订单</p>
+          <div id="orders-list" class="orders-list" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section section-agent" id="agent">
+        <div class="container agent-inner">
+          <h2 class="agent-heading" data-i18n="modules.agent.tag">6 · 成为代理</h2>
+          <p class="agent-subtitle" data-i18n="modules.agent.subtitle">开放渠道 · 欢迎加盟</p>
+          <p class="agent-body" data-i18n="agent.p1">
+            代理需缴纳加盟费（含API技术服务费）200 USDC。平台抽佣 10%，剩下归你自己拿。
+          </p>
+          <p class="agent-body" data-i18n="agent.p2">
+            我们提供平台与稳定进货渠道，欢迎有能力的人加入！
+          </p>
+          <a
+            class="btn btn-primary agent-cta"
+            href="https://t.me/EASYID_TG"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="agent.cta"
+            >加入代理</a>
+        </div>
+      </section>
+
+      <section class="section section-contact" id="contact">
+        <div class="container contact-inner">
+          <h2 class="section-title centered" data-i18n="contact.title">联系我们</h2>
+          <p class="section-sub centered" data-i18n="contact.sub">
+            商务合作、定制方案或售后问题，欢迎联系，我们会在两小时内回复。
+          </p>
+          <div class="contact-cards">
+            <a class="contact-card" href="mailto:easyidsurpport@gmail.com">
+              <span class="contact-card-label" data-i18n="contact.inquiry">咨询反馈</span>
+              <span class="contact-card-value">easyidsurpport@gmail.com</span>
+            </a>
+            <a
+              class="contact-card"
+              href="https://t.me/EASYID_TG"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="contact-card-label" data-i18n="contact.telegram">Telegram</span>
+              <span class="contact-card-value" data-i18n="contact.telegramHandle">@EASYID_TG</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span class="footer-logo">EASYID</span>
+        <p class="footer-note" data-i18n="footer.note">© EASYID · 面向全球业务运营者的身份基础设施。</p>
+      </div>
+    </footer>
+
+    <div
+      id="order-modal"
+      class="order-modal"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-labelledby="order-modal-title"
+    >
+      <div class="order-modal-backdrop" id="order-modal-backdrop" tabindex="-1"></div>
+      <div class="order-modal-panel">
+        <div class="order-modal-head">
+          <h2 id="order-modal-title" class="order-modal-title">下单</h2>
+          <button type="button" class="order-modal-close" id="order-modal-close" aria-label="Close">×</button>
+        </div>
+        <div class="order-modal-body">
+          <form id="order-form" class="order-form" novalidate>
+            <p class="order-plan-line">
+              <span data-i18n="order.plan">所选套餐</span>：
+              <strong id="order-plan-name">—</strong>
+            </p>
+
+            <fieldset class="order-fieldset">
+              <legend data-i18n="order.cardType">卡类型</legend>
+              <label class="order-radio">
+                <input type="radio" name="cardType" value="esim" checked />
+                <span data-i18n="order.esim">eSIM（无实体寄送）</span>
+              </label>
+              <label class="order-radio">
+                <input type="radio" name="cardType" value="physical" />
+                <span data-i18n="order.physical">实体卡（加收购卡标价 10% 运费）</span>
+              </label>
+            </fieldset>
+
+            <div class="order-pricing-box">
+              <p class="order-pricing-title" data-i18n="order.pricing">费用明细</p>
+              <div class="order-line">
+                <span data-i18n="order.base">购卡标价（USDC）</span>
+                <span><span id="order-base-line">0.00</span> USDC</span>
+              </div>
+              <div class="order-line">
+                <span data-i18n="order.shipping">运费（USDC）</span>
+                <span><span id="order-shipping-line">0.00</span> USDC</span>
+              </div>
+              <div class="order-line order-line-total">
+                <span data-i18n="order.total">应付（USDC）</span>
+                <span><span id="order-total-line">0.00</span> USDC</span>
+              </div>
+            </div>
+
+            <div class="order-grid">
+              <label class="order-field">
+                <span data-i18n="order.lastName">姓</span>
+                <input name="lastName" type="text" autocomplete="family-name" required data-i18n-placeholder="order.ph" />
+              </label>
+              <label class="order-field">
+                <span data-i18n="order.firstName">名</span>
+                <input name="firstName" type="text" autocomplete="given-name" required data-i18n-placeholder="order.ph" />
+              </label>
+              <label class="order-field order-field-full">
+                <span data-i18n="order.email">邮箱</span>
+                <input name="email" type="email" autocomplete="email" required data-i18n-placeholder="order.ph" />
+              </label>
+              <label class="order-field order-field-full">
+                <span data-i18n="order.contact">联系方式</span>
+                <input name="contact" type="text" required data-i18n-placeholder="order.ph" />
+              </label>
+              <label class="order-field order-field-full">
+                <span data-i18n="order.recipientName">收件人</span>
+                <input name="recipientName" type="text" autocomplete="name" required data-i18n-placeholder="order.ph" />
+              </label>
+              <label class="order-field order-field-full">
+                <span data-i18n="order.recipientPhone">手机号码</span>
+                <input name="recipientPhone" type="tel" autocomplete="tel" required data-i18n-placeholder="order.ph" />
+              </label>
+              <label class="order-field order-field-full">
+                <span data-i18n="order.address">收件地址</span>
+                <textarea name="address" rows="3" required data-i18n-placeholder="order.ph"></textarea>
+              </label>
+            </div>
+
+            <fieldset class="order-fieldset">
+              <legend data-i18n="order.payment">支付方式</legend>
+              <p class="order-pay-note" data-i18n="order.payNote">
+                手动链上转账。请向下列地址付款后，上传转账截图并填写交易哈希——两项均必填方可提交。
+              </p>
+              <label class="order-radio">
+                <input type="radio" name="paymentMethod" value="evm" checked />
+                <span data-i18n="order.payEvm">USDC — EVM（Arbitrum / 以太坊 / BNB 链）</span>
+              </label>
+              <div id="pay-evm-detail" class="pay-detail">
+                <p class="pay-addr-label">USDC (Arbitrum / ETH / BNB)</p>
+                <code class="pay-addr" id="pay-evm-addr">0x6A3B50B88d7b77bb57b47041821E0dA13b5D3f52</code>
+                <p class="pay-net" id="pay-evm-net"></p>
+              </div>
+              <label class="order-radio">
+                <input type="radio" name="paymentMethod" value="trc20" />
+                <span data-i18n="order.payTrc">USDC — TRC20（波场）</span>
+              </label>
+              <div id="pay-trc-detail" class="pay-detail" hidden>
+                <p class="pay-addr-label">USDC (TRC20)</p>
+                <code class="pay-addr" id="pay-trc-addr">TJJpdxWKdMBeVLUGamtKFdyNmrSsTupZsD</code>
+                <p class="pay-net" id="pay-trc-net"></p>
+              </div>
+            </fieldset>
+
+            <label class="order-field order-field-full">
+              <span data-i18n="order.txScreenshot">转账截图</span>
+              <input name="txScreenshot" type="file" accept="image/*" required />
+            </label>
+            <label class="order-field order-field-full">
+              <span data-i18n="order.txHash">交易哈希</span>
+              <input name="txHash" type="text" required data-i18n-placeholder="order.ph" />
+            </label>
+
+            <button type="submit" class="btn btn-primary order-submit" data-i18n="order.submit">提交订单</button>
+          </form>
+
+          <div id="order-success" class="order-success" hidden>
+            <p class="order-success-title" data-i18n="order.success">提交成功</p>
+            <p class="order-success-text" data-i18n="order.successHint">已记入个人订单，状态：待发货。</p>
+            <button type="button" class="btn btn-primary" id="order-success-done" data-i18n="order.close">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="feedback-tab" href="mailto:easyidsurpport@gmail.com" data-i18n="feedback">反馈</a>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/giffgaff-order.js"></script>
+  </body>
+</html>
